@@ -1,0 +1,52 @@
+@extends('books.layout')
+
+@section('content')
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2>Add New Book</h2>
+            </div>
+        </div>
+    </div>
+
+    <form action="{{ route('books.store') }}" method="POST">
+        @csrf
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Title:</strong>
+                    <input type="text" name="title" class="form-control" placeholder="Title">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Author:</strong>
+                    <input type="text" name="author" class="form-control" placeholder="Author">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Page amount:</strong>
+                    <input type="text" name="pageQuantity" class="form-control" placeholder="Page Amount">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Company:</strong>
+                    <input type="text" name="company" class="form-control" placeholder="Company">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Price:</strong>
+                    <input type="text" name="price" class="form-control" placeholder="Price">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </form>
+@endsection

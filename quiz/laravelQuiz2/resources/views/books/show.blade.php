@@ -1,14 +1,12 @@
 @extends('books.layout')
 
 @section('content')
+<br><br><br><br>
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Book List</h2>
+                <h2>Here are the Book List</h2>
             </div>
-            {{-- <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('books.index') }}"> Back</a>
-            </div> --}}
         </div>
     </div>
 
